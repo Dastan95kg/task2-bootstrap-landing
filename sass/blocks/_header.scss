@@ -13,6 +13,10 @@
     &__nav {
         padding: 20px 0;
         margin-bottom: 120px;
+
+        @media #{$large} {
+            margin-bottom: 60px;
+        }
     }
 
     .header__nav a:hover {
@@ -20,9 +24,17 @@
         font-weight: bold;
     }
 
+    .dropdown-item:hover {
+        background-color: #ED4C5C;;
+    }
+
     &__logo {
         font-size: 18px;
         line-height: 22px;
+
+        @media #{$small} {
+            font-size: 16px;   
+        }
     }
 
     &__link {
@@ -51,6 +63,20 @@
         line-height: 86px;
         letter-spacing: 0.05em;
         margin-bottom: 25px;
+
+        @media #{$large} {
+            font-size: 50px;
+            line-height: 43px;
+        }
+
+        @media #{$medium} {
+            margin-bottom: 15px;
+            font-size: 36px;
+        }
+
+        @media #{$small} {
+            font-size: 25px; 
+        }
     }
 
     &__subtitle {
@@ -58,5 +84,24 @@
         line-height: 36px;
         padding: 0 300px;
         margin-bottom: 25px;
+
+        @media #{$extra-large} {
+            padding: 0 150px;
+        }
+
+        @media #{$large} {
+            padding: 0 100px;
+        }
+
+        @media #{$medium} {
+            margin-bottom: 15px;
+            padding: 0 15px;
+            font-size: 18px;
+        }
+
+        @media #{$small} {
+            font-size: 16px;
+            line-height: 25px;   
+        }
     }
 }

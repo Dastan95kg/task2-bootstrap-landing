@@ -1,6 +1,10 @@
 .technology {
     padding: 83px 0 100px;
 
+    @media #{$medium} {
+        padding: 50px 0;
+    }
+
     &__item {
         padding-bottom: 26px;
 

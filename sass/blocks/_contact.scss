@@ -1,19 +1,51 @@
 .contact {
     padding: 110px 0;
 
+    @media #{$medium} {
+        padding: 50px 0;
+    }
+
+    &__content {
+
+        @media #{$medium} {
+            flex-direction: column;
+        }
+    }
+
     &__data {
         padding: 0 30px;
+
+        @media #{$medium} {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        @media #{$small} {
+            padding: 0 15px;   
+        }
 
         &-title {
             font-size: 36px;
             font-weight: 600;
             line-height: 43px;
             margin-bottom: 60px;
+
+            @media #{$medium} {
+                margin-bottom: 20px;
+                font-size: 25px;
+                line-height: 30px;
+            }
         }
     
         &-text {
             line-height: 20px;
             padding-right: 80px;
+
+            @media #{$medium} {
+                text-align: center !important;
+                padding-right: 0;
+                font-size: 16px;
+            }
         }
     }
 
@@ -42,6 +74,11 @@
                 background: #ED4C5C;
                 color: #fff;
                 border-color: #ED4C5C;
+            }
+
+            @media #{$medium} {
+                display: block;
+                margin: 0 auto;
             }
         }
 
